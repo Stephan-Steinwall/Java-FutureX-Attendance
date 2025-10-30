@@ -11,8 +11,9 @@ export default function Home() {
 	return (
         <main className="min-h-screen bg-black text-white relative overflow-hidden">
             <Navbar />
-            <div className="pointer-events-none absolute inset-0 bg-animated-gradient grid-overlay" />
-            <section className="mx-auto max-w-4xl px-6 py-16 flex flex-col items-center text-center gap-8">
+            <div className="pointer-events-none absolute inset-0 z-0 bg-animated-gradient" />
+            <div className="pointer-events-none absolute inset-0 z-0 grid-overlay" />
+            <section className="relative z-10 mx-auto max-w-4xl px-6 py-16 flex flex-col items-center text-center gap-8">
                 <motion.h1 className={`text-4xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-300 via-teal-300 to-emerald-300 bg-clip-text text-transparent ${orbitron.className}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
 					Java FutureX 2025 Attendance
 				</motion.h1>

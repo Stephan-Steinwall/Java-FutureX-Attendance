@@ -27,11 +27,12 @@ body {
 
 /* Animated gradient layers for landing */
 .bg-animated-gradient {
-	background:
-		radial-gradient(1200px 800px at 10% 10%, rgba(34,211,238,.15), transparent 60%),
-		radial-gradient(900px 700px at 90% 20%, rgba(16,185,129,.12), transparent 60%),
-		radial-gradient(1000px 600px at 50% 90%, rgba(59,130,246,.10), transparent 60%);
-	animation: gradientShift 16s ease-in-out infinite alternate;
+    background:
+        radial-gradient(1300px 900px at 12% 12%, rgba(34,211,238,.25), transparent 60%),
+        radial-gradient(1000px 760px at 88% 22%, rgba(16,185,129,.18), transparent 60%),
+        radial-gradient(1200px 700px at 55% 85%, rgba(59,130,246,.14), transparent 60%),
+        radial-gradient(1100px 700px at 75% 75%, rgba(147,51,234,.12), transparent 65%);
+    animation: gradientShift 14s ease-in-out infinite alternate;
 }
 
 @keyframes gradientShift {
@@ -46,5 +47,6 @@ body {
 		linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
 		linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
 	background-size: 40px 40px;
-	mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
+    mask-image: radial-gradient(ellipse at center, black 65%, transparent 100%);
+    opacity: .5;
 }
