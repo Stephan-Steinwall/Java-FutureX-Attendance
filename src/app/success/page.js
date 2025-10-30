@@ -1,9 +1,10 @@
 "use client";
 
-import { useSearchParams, useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import Link from "next/link";
 
-export default function SuccessPage() {
+function SuccessInner() {
 	const search = useSearchParams();
 	const status = search.get("status");
 
@@ -23,6 +24,14 @@ export default function SuccessPage() {
 				</Link>
 			</div>
 		</main>
+	);
+}
+
+export default function SuccessPage() {
+	return (
+		<Suspense fallback={<main className="min-h-screen bg-black" />}> 
+			<SuccessInner />
+		</Suspense>
 	);
 }
 
