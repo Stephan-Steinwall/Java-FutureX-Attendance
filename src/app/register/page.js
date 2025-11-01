@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { supabasePublic } from "@/lib/supabaseClient";
 import Navbar from "@/components/Navbar";
 
-const BATCHES = ["Cohort 7", "Cohort 8", "Giraffe", "Gorlla", "Gorilla"];
+const BATCHES = ["Default"];
 
 export default function RegisterPage() {
 	const router = useRouter();
